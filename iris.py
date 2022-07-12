@@ -1,6 +1,9 @@
 import streamlit as st
 import pandas as pd
 
+# Access:
+# https://share.streamlit.io/sandorcumberbane/streamlit/main/iris.py
+
 iris = pd.read_csv("Iris.csv")
 iris = iris.drop("Id", axis = 1)
 iris = iris.rename(columns={"SepalLengthCm": "Sepal Length",
